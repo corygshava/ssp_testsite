@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haosel Apps</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Arial, sans-serif;
+      background: #f7f9fb;
+      color: #333;
+    }
+    header {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 48px 1rem;
+    }
+    header .h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto 120px 0;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: 0.2s ease;
+      text-decoration: none;
+      flex: 0 0 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #1e3a8a;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #111 !important;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .date {
+      font-size: 0.8rem;
+      color: #777 !important;
+      margin-bottom: 1rem;
+    }
+    .card span {
+      display: inline-block;
+      text-decoration: none;
+      color: #1e3a8a;
+      padding: 3px 0 2px 0;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.2s ease;
+    }
+    
+    footer{
+      padding: 25px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-image: linear-gradient(to top,#fff,transparent);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="h1">Haosel Apps</span>
+    <p>This subdomain hosts our public apps. Explore and try them out below.</p>
+  </header>
+
+  <div class="content" id="appList"></div>
+
+  <footer>
+    &copy; CoryG. All rights reserved
+  </footer>
+  <script>
+    // Example apps array
+    const apps = [
+      { name: "CM Cash", address: "./cmcash/src/", dateadded: "2025-05-01",desc: "this is a simple finance manager app" },
+      { name: "Hypernote", address: "./hypernote/", dateadded: "2025-06-15",desc: "this is a simple note keeping app for collaborating"  }
+    ];
+
+    const appList = document.getElementById("appList");
+
+    apps.forEach(app => {
+      const card = document.createElement("a");
+      card.className = "card";
+      card.href = `${app.address}`;
+      card.innerHTML = `
+        <h3>${app.name}</h3>
+        <p>${app.desc}</p>
+        <div>
+          <span class="date">Added: ${app.dateadded}</span>
+          <span target="_blank">Open App</span>
+        </div>
+      `;
+      appList.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>
