@@ -1,0 +1,403 @@
+[
+	{
+		"topic": "Mass, Density and Weight",
+		"objectives": [
+			"define mass",
+			"state units of mass",
+			"convert units of mass from one form to another",
+			"define weight",
+			"state units of weight",
+			"distinguish mass and weight",
+			"relate volume, mass and density"
+		],
+		"subtopics": [
+			"Mass and units of mass",
+			"Weight and units of weight",
+			"Density",
+			"Problem solving involving real life experiences on mass, volume, density and weight"
+		]
+	},
+	{
+		"topic": "Time",
+		"objectives": [
+			"convert units of time from one form to another",
+			"relate the 12 hour and 24 hour clock systems",
+			"read and interpret travel time-tables",
+			"solve problems involving travel time tables"
+		],
+		"subtopics": [
+			"Units of time",
+			"12 hour and 24 hour clock systems",
+			"Travel time-tables",
+			"Problems involving travel time tables"
+		]
+	},
+	{
+		"topic": "Area of a Triangle",
+		"objectives": [
+			"derive the formula; Area = ½ ab sin C",
+			"solve problems involving area of triangles using the formula Area = ½ ab sin C",
+			"solve problems on area of a triangle using the formula area = √[s(s-a)(s-b)(s-c)]"
+		],
+		"subtopics": [
+			"Area of triangle A = ½ ab sin C",
+			"Area of a triangle A = √[s(s-a)(s-b)(s-c)]",
+			"Application of the above formulae in solving problems involving real life situations"
+		]
+	},
+	{
+		"topic": "Area of Quadrilaterals and Other Polygons",
+		"objectives": [
+			"find the area of a quadrilateral",
+			"find the area of other polygons (regular and irregular)"
+		],
+		"subtopics": [
+			"Area of quadrilaterals",
+			"Area of other polygons (regular and irregular)"
+		]
+	},
+	{
+		"topic": "Area of Part of a Circle",
+		"objectives": [
+			"find the area of a sector",
+			"find the area of a segment",
+			"find the area of a common region between two circles"
+		],
+		"subtopics": [
+			"Area of a sector",
+			"Area of a segment",
+			"Area of common regions between circles"
+		]
+	},
+	{
+		"topic": "Surface Area of Solids",
+		"objectives": [
+			"find the surface area of a prism",
+			"find the surface area of a pyramid",
+			"find the surface area of a cone",
+			"find the surface area of a frustum",
+			"find the surface area of a sphere and a hemisphere"
+		],
+		"subtopics": [
+			"Surface area of prisms, pyramids, cones, frustums and spheres"
+		]
+	},
+	{
+		"topic": "Volume of Solids",
+		"objectives": [
+			"find the volume of a prism",
+			"find the volume of a pyramid",
+			"find the volume of a cone",
+			"find the volume of a frustum",
+			"find the volume of a sphere and a hemisphere"
+		],
+		"subtopics": [
+			"Volumes of prisms",
+			"Pyramids",
+			"Cones",
+			"Frustums",
+			"Spheres"
+		]
+	},
+	{
+		"topic": "Algebraic Expressions",
+		"objectives": [
+			"use letters to represent numbers",
+			"write statements in algebraic form",
+			"simplify algebraic expressions",
+			"factorise an algebraic expression by grouping",
+			"remove brackets from algebraic expressions",
+			"evaluate algebraic expressions by substituting numerical values",
+			"apply algebra in real life situations"
+		],
+		"subtopics": [
+			"Letters for numbers",
+			"Algebraic fractions",
+			"Simplification of algebraic expressions",
+			"Factorisation by grouping",
+			"Removal of brackets",
+			"Substitution and evaluation",
+			"Problem solving in real life situations"
+		]
+	},
+	{
+		"topic": "Equation of Straight Lines",
+		"objectives": [
+			"define gradient of a straight line",
+			"determine the gradient of a straight line through known points",
+			"determine the equation of a straight line using gradient and one known point",
+			"express a straight line equation in the form y = mx + c",
+			"interpret the equation y = mx + c",
+			"find the x- and y-intercepts from an equation of a line",
+			"draw the graph of a straight line using gradient and x- and y-intercepts",
+			"state the relationship of gradients of perpendicular lines",
+			"state the relationship of gradients of parallel lines",
+			"apply the relationship of gradients of perpendicular and parallel lines to get equations of straight lines"
+		],
+		"subtopics": [
+			"Gradient of a straight line",
+			"Equation of a straight line",
+			"The equation of a straight line of the form y = mx + c",
+			"The x and y intercepts of a line",
+			"The graph of a straight line",
+			"Perpendicular lines and their gradients",
+			"Parallel lines and their gradients",
+			"Equations of parallel and perpendicular lines"
+		]
+	},
+	{
+		"topic": "Linear Equations",
+		"objectives": [
+			"solve linear equations in one unknown",
+			"solve simultaneous linear equations by substitution and elimination",
+			"solve linear equations in one and two unknowns from given real life situations"
+		],
+		"subtopics": [
+			"Linear equations in one unknown",
+			"Simultaneous linear equations",
+			"Linear equations in one and two unknowns from given real life situations"
+		]
+	},
+	{
+		"topic": "Quadratic Expressions and Equations 1",
+		"objectives": [
+			"expand algebraic expressions that form quadratic equations",
+			"derive the three quadratic identities",
+			"identify and use the three quadratic identities",
+			"factorise quadratic expressions including the identities",
+			"solve quadratic equations by factorization",
+			"form and solve quadratic equations"
+		],
+		"subtopics": [
+			"Expansion of algebraic expressions to form quadratic expressions",
+			"The three quadratic identities: (a+b)² = a² + 2ab + b², (a-b)² = a² - 2ab + b², (a-b)(a+b) = a² - b²",
+			"Using the three quadratic identities",
+			"Factorisation of quadratic expressions",
+			"Solve quadratic equations by factorization",
+			"Form and solve quadratic equations"
+		]
+	},
+	{
+		"topic": "Quadratic Expressions and Equations 2",
+		"objectives": [
+			"factorise quadratic expressions",
+			"identify perfect squares",
+			"complete the square",
+			"solve quadratic equations by completing the square",
+			"derive the quadratic formula",
+			"solve quadratic equations using the formula",
+			"form and solve quadratic equations from roots and given situations",
+			"make tables of values from a quadratic relation",
+			"draw the graph of a quadratic relation",
+			"solve quadratic equations using graphs",
+			"solve simultaneous equations (one linear and one quadratic) analytically and graphically",
+			"apply the knowledge of quadratic equations to real life situations"
+		],
+		"subtopics": [
+			"Factorisation of quadratic expressions",
+			"Perfect squares",
+			"Completion of the squares",
+			"Solution of quadratic equations by completing the square",
+			"Quadratic formula",
+			"Solution of quadratic equations using the formula",
+			"Formation of quadratic equations and solving them",
+			"Tables of values for a given quadratic relation",
+			"Graphs of quadratic equations",
+			"Simultaneous equation — one linear and one quadratic",
+			"Application of quadratic equation to real life situation"
+		]
+	},
+	{
+		"topic": "Linear Inequalities 1",
+		"objectives": [
+			"identify and use inequality symbols",
+			"illustrate inequalities on the number line",
+			"solve linear inequalities in one unknown",
+			"represent the linear inequalities graphically",
+			"solve the linear inequalities in two unknowns graphically",
+			"form simple linear inequalities from inequality graphs"
+		],
+		"subtopics": [
+			"Inequalities on a number line",
+			"Simple and compound inequality statements",
+			"Linear inequality in one unknown",
+			"Graphical representation of linear inequalities",
+			"Graphical solutions of simultaneous linear inequalities",
+			"Simple linear inequalities from inequality graphs"
+		]
+	},
+	{
+		"topic": "Linear Inequalities 2",
+		"objectives": [
+			"form linear inequalities based on real life situations",
+			"represent the linear inequalities on a graph",
+			"solve and interpret the optimum solution of the linear inequalities",
+			"apply linear programming to real life situations"
+		],
+		"subtopics": [
+			"Formation of linear inequalities",
+			"Analytical solutions of linear inequalities",
+			"Solutions of linear inequalities by graphs",
+			"Optimisation (include objective function)",
+			"Application of quadratic equations to real life situations"
+		]
+	},
+	{
+		"topic": "Surds",
+		"objectives": [
+			"define rational and irrational numbers",
+			"simplify expressions with surds",
+			"rationalise denominators with surds"
+		],
+		"subtopics": [
+			"Rational and irrational numbers",
+			"Simplification of surds",
+			"Rationalisation of denominators"
+		]
+	},
+	{
+		"topic": "Sequences and Series",
+		"objectives": [
+			"identify simple number patterns",
+			"define a sequence",
+			"identify the pattern for a given set of numbers and deduce the general rule",
+			"determine a term in a sequence",
+			"recognise arithmetic and geometric sequences",
+			"define a series",
+			"recognise arithmetic and geometric series (Progression)",
+			"derive the formula for partial sum of an arithmetic and geometric series (Progression)",
+			"apply A.P and G.P to solve problems in real life situations"
+		],
+		"subtopics": [
+			"Simple number patterns",
+			"Sequences",
+			"Arithmetic sequence",
+			"Geometric sequence",
+			"Determining a term in a sequence",
+			"Arithmetic progression (A.P)",
+			"Geometric progression (G.P)",
+			"Sum of an A.P",
+			"Sum of a G.P (exclude sum to infinity)",
+			"Application of A.P and G.P to real life situations"
+		]
+	},
+	{
+		"topic": "Binomial Expansions",
+		"objectives": [
+			"expand binomial expressions up to the power of four by multiplication",
+			"building up Pascal's Triangle up to the eleventh row",
+			"use Pascal's triangle to determine the coefficient of terms in a binomial expansions up to the power of 10",
+			"apply binomial expansion in numerical cases"
+		],
+		"subtopics": [
+			"Binomial expansion up to power four",
+			"Pascal's triangle",
+			"Coefficient of terms in binomial expansion",
+			"Computation using binomial expansion",
+			"Evaluation of numerical cases using binomial expansion"
+		]
+	},
+	{
+		"topic": "Formulae and Variations",
+		"objectives": [
+			"rewrite a given formula by changing the subject",
+			"define direct, inverse, partial and joint variations",
+			"determine constants of proportionality",
+			"form and solve equations involving variations",
+			"draw graphs to illustrate direct and inverse proportions",
+			"use variations to solve everyday life problems"
+		],
+		"subtopics": [
+			"Change of the subject",
+			"Direct, inverse, partial and joint variations",
+			"Constant of proportionality",
+			"Graphs of direct and inverse proportion",
+			"Equations on variation from real life situations"
+		]
+	},
+	{
+		"topic": "Angles and Plane Figures",
+		"objectives": [
+			"name and identify types of angles",
+			"solve problems involving angles on a straight line",
+			"solve problems involving angles at a point",
+			"solve problems involving angles on a transversal cutting parallel lines",
+			"state angle properties of polygons",
+			"solve problems involving angle properties of polygons",
+			"apply the knowledge of angle properties to real life situations"
+		],
+		"subtopics": [
+			"Types of angles",
+			"Angles on a straight line",
+			"Angles at a point",
+			"Angles on a transversal (corresponding, alternate and allied angles)",
+			"Angle properties of polygons",
+			"Application to real life situations"
+		]
+	},
+	{
+		"topic": "Geometrical Constructions",
+		"objectives": [
+			"use a ruler and compasses only to construct a perpendicular bisector of a line",
+			"construct an angle bisector",
+			"construct a perpendicular to a line from a given point",
+			"construct a perpendicular to a line through a given point on the line",
+			"construct angles whose values are multiples of 7.5°",
+			"construct parallel lines",
+			"divide a line proportionally",
+			"use a ruler and a set square to construct parallel lines, divide a line proportionally, and to construct perpendicular lines",
+			"construct a regular polygon using ruler and compasses only, and ruler, compasses and protractor",
+			"construct irregular polygons using a ruler, compasses and protractor"
+		],
+		"subtopics": [
+			"Construction of lines and angles using a ruler and compasses only",
+			"Construction of perpendicular and parallel lines using a ruler and a set square only",
+			"Proportional division of a line",
+			"Construction of regular polygons (up to a hexagon)",
+			"Construction of irregular polygons (up to a hexagon)"
+		]
+	},
+	{
+		"topic": "Loci",
+		"objectives": [
+			"define Locus",
+			"describe common types of Loci",
+			"construct loci involving inequalities",
+			"construct loci involving chords",
+			"construct loci involving points under given conditions",
+			"construct intersecting loci"
+		],
+		"subtopics": [
+			"Common types of Loci",
+			"Perpendicular bisector loci",
+			"Locus of a point at a given distance from a fixed point",
+			"Angle bisector loci",
+			"Other loci under given condition including intersecting loci",
+			"Loci involving inequalities",
+			"Loci involving chords (constant angle loci)"
+		]
+	},
+	{
+		"topic": "Scale Drawing",
+		"objectives": [
+			"interpret a given scale",
+			"choose and use an appropriate scale",
+			"draw suitable sketches from given information",
+			"state the bearing of one point from another",
+			"locate a point using bearing and distance",
+			"determine angles of elevation and depression",
+			"solve problems involving bearings elevations and scale drawing",
+			"apply scale drawing in simple surveying"
+		],
+		"subtopics": [
+			"Types of scales",
+			"Choice of scales",
+			"Sketching from given information and scale drawing",
+			"Bearings",
+			"Bearings, distance and locating points",
+			"Angles of elevation and depression",
+			"Problems involving bearings, scale drawing, angles of elevation and depression",
+			"Simple surveying techniques"
+		]
+	}
+]

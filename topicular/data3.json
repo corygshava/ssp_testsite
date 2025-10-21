@@ -1,0 +1,434 @@
+[
+  {
+    "topic": "Common Solids",
+    "objectives": [
+      "identify and sketch common solids",
+      "sketch and accurately draw nets of solids",
+      "make models of solids from nets",
+      "calculate surface area of solids from nets",
+      "find distances between two points on a solid"
+    ],
+    "subtopics": [
+      "Common solids (cubes, cuboids, pyramids, prisms, cones, spheres, cylinders)",
+      "Sketches of solids",
+      "Nets of solids",
+      "Models of solids from nets",
+      "Surface area of solids",
+      "Distance between two points on the surface of a solid"
+    ]
+  },
+  {
+    "topic": "Three Dimensional Geometry",
+    "objectives": [
+      "state the geometric properties of common solids",
+      "identify projection of a line onto a plane",
+      "identify skew lines",
+      "calculate the length between two points in three dimensional geometry",
+      "identify and calculate the angle between two lines",
+      "identify and calculate the angle between a line and a plane",
+      "identify and calculate the angle between two planes"
+    ],
+    "subtopics": [
+      "Geometrical properties of common solids",
+      "Skew lines and projection of a line onto a plane",
+      "Length of a line in 3-dimensional geometry",
+      "The angle between a line and a line",
+      "The angle between a line and a plane",
+      "The angle between a plane and a plane",
+      "Angles between skew lines"
+    ]
+  },
+  {
+    "topic": "Angle Properties of a Circle",
+    "objectives": [
+      "identify an arc, chord and segment",
+      "relate and compute angle subtended by an arc at the circumference",
+      "relate and compute angle subtended by an arc at the centre and at the circumference",
+      "state the angle in the semi-circle",
+      "state the angle properties of a cyclic quadrilateral",
+      "find and compute angles of a cyclic quadrilateral"
+    ],
+    "subtopics": [
+      "Arc, chord and segment",
+      "Angle subtended by the same arc at the circumference",
+      "Relationship between angle subtended at the centre and angle subtended on the circumference by the same arc",
+      "Angle in a semi-circle",
+      "Angle properties of a cyclic quadrilateral",
+      "Finding angles of a cyclic quadrilateral"
+    ]
+  },
+  {
+    "topic": "Circles: Chords and Tangents",
+    "objectives": [
+      "calculate length of an arc and a chord",
+      "calculate lengths of tangents and intersecting chords",
+      "state and use properties of chords and tangents",
+      "construct tangent to a circle",
+      "construct direct and transverse common tangents to two circles",
+      "relate angles in alternate segment",
+      "construct circumscribed, inscribed and escribed circles",
+      "locate centroid and orthocentre of a triangle",
+      "apply knowledge of circles, tangents and chords to real life situations"
+    ],
+    "subtopics": [
+      "Arcs, chords and tangents",
+      "Lengths of tangents and intersecting chords",
+      "Properties of chords and tangents",
+      "Construction of tangents to a circle",
+      "Direct and transverse common tangents to two circles",
+      "Angles in alternate segment",
+      "Circumscribed, inscribed and escribed circles",
+      "Centroid and orthocentre",
+      "Application of knowledge of tangents and chords to real life situations"
+    ]
+  },
+  {
+    "topic": "Co-ordinates and Graphs",
+    "objectives": [
+      "draw and label the complete cartesian plane",
+      "locate and plot points on the cartesian plane",
+      "choose and use appropriate scale for a given data",
+      "make a table of values for a given linear relation",
+      "use values to draw a linear graph",
+      "solve simultaneous linear equations graphically",
+      "draw, read and interprete graphs"
+    ],
+    "subtopics": [
+      "Cartesian plane",
+      "Cartesian co-ordinate",
+      "Points on the cartesian plane",
+      "Choice of appropriate scale",
+      "Table of values for a given linear relation",
+      "Linear graphs",
+      "Graphical solutions of simultaneous linear equations",
+      "Interpretation of graphs"
+    ]
+  },
+  {
+    "topic": "Graphical Methods",
+    "objectives": [
+      "makes a table of values from given relations",
+      "use the table of values to draw the graphs of the relations",
+      "determine and interpret instantaneous rates of change from a graph",
+      "interpret information from graphs",
+      "draw and interpret graphs from empirical data",
+      "solve cubic equations graphically",
+      "draw the line of best fit",
+      "identify the equation of a circle",
+      "find the equation of a circle given the centre and the radius",
+      "determine the centre and radius of a circle and draw the circle on a cartesian plane"
+    ],
+    "subtopics": [
+      "Tables and graphs of given relations",
+      "Graphs of cubic equations",
+      "Graphical solutions of cubic equations",
+      "Average rate of change",
+      "Instantaneous rate of change",
+      "Empirical data and their graphs",
+      "The line of best fit",
+      "Equation of a circle",
+      "Finding of the equation of a circle",
+      "Determining of the centre and radius of a circle"
+    ]
+  },
+  {
+    "topic": "Trigonometry 1",
+    "objectives": [
+      "define tangent, sine and cosine ratios from a right angled triangle",
+      "read and use tables of trigonometric ratios",
+      "use sine, cosine and tangent in calculating lengths and angles",
+      "establish and use the relationship of sine and cosine of complimentary angles",
+      "relate the three trigonometric ratios",
+      "determine the trigonometric ratios of special angles 30°, 45°, 60° and 90° without using tables",
+      "read and use tables of logarithms of sine, cosine and tangent",
+      "apply the knowledge of trigonometry to real life situations"
+    ],
+    "subtopics": [
+      "Tangent, sine and cosine of angles",
+      "Trigonometric tables",
+      "Angles and sides of a right angled triangle",
+      "Sine and cosine of complimentary angles",
+      "Relationship between tangent, sine and cosine",
+      "Trigonometric ratios of special angles 30°, 45°, 60° and 90°",
+      "Logarithms of sines, cosines and tangents",
+      "Application of trigonometry to real life situations"
+    ]
+  },
+  {
+    "topic": "Trigonometry 2",
+    "objectives": [
+      "define and draw the unit circle",
+      "use the unit circle to find trigonometric ratios in terms of co-ordinates of points for 0° < θ < 360°",
+      "find trigonometric ratios of negative angles",
+      "find trigonometric ratios of angles greater than 360°",
+      "use mathematical tables and calculators to find trigonometric ratios of angles in the range 0° ≤ θ ≤ 360°",
+      "define radian measure",
+      "draw graphs of trigonometric functions; y = sin x, y = cos x and y = tan x using degrees and radians",
+      "derive the sine rule",
+      "derive the cosine rule",
+      "apply the sine and cosine rule to solve triangles (sides, angles and area)",
+      "apply the knowledge of sine and cosine rules in real life situations"
+    ],
+    "subtopics": [
+      "The unit circles",
+      "Trigonometric ratios from the unit circle",
+      "Trigonometric ratios of angles greater than 360° and negative angles",
+      "Use of trigonometric tables and calculators",
+      "Radian measure",
+      "Simple trigonometric graphs",
+      "Derivation of sine and cosine rule",
+      "Solution of triangles",
+      "Application of sine and cosine rule to real situation"
+    ]
+  },
+  {
+    "topic": "Trigonometry 3",
+    "objectives": [
+      "recall and define trigonometric ratios",
+      "derive trigonometric identity sin²x + cos²x = 1",
+      "draw graphs of trigonometric functions",
+      "solve simple trigonometric equations analytically and graphically",
+      "deduce from the graph amplitude, period, wavelength and phase angles"
+    ],
+    "subtopics": [
+      "Trigonometric ratios",
+      "Deriving the relation sin²x + cos²x = 1",
+      "Graphs of trigonometric functions of the form y = sin x, y = cos x, y = tan x, y = a sin x, y = a cos x, y = a tan x, y = a sin(bx ± θ), y = a cos(bx ± θ), y = a tan(bx ± θ)",
+      "Simple trigonometric equation",
+      "Amplitude, period, wavelength and phase angle of trigonometric functions"
+    ]
+  },
+  {
+    "topic": "Commercial Arithmetic 1",
+    "objectives": [
+      "state the currencies of different countries",
+      "convert currency from one form into another given the exchange rates",
+      "calculate profit and loss",
+      "express profit and loss as percentages",
+      "calculate discount and commission",
+      "express discount and commission as percentage"
+    ],
+    "subtopics": [
+      "Currency",
+      "Current currency exchange rates",
+      "Currency conversion",
+      "Profit and loss",
+      "Percentage profit and loss",
+      "Discounts and commissions",
+      "Percentage discounts and commissions"
+    ]
+  },
+  {
+    "topic": "Commercial Arithmetic 2",
+    "objectives": [
+      "define principal, rate and time in relation to interest",
+      "calculate simple interest using simple interest formula",
+      "calculate compound interest using step by step method",
+      "derive the compound interest formula",
+      "apply the compound interest formula for calculating interest",
+      "define appreciation and depreciation",
+      "use compound interest formula to calculate appreciation and depreciation",
+      "calculate hire purchase",
+      "calculate income tax given the income tax bands"
+    ],
+    "subtopics": [
+      "Principal rate and time",
+      "Simple interest",
+      "Compound interest using step by step method",
+      "Derivation of compound interest formula",
+      "Calculations using the compound interest formula",
+      "Appreciation and depreciation",
+      "Calculation of appreciation and depreciation using the compound interest formula",
+      "Hire purchase",
+      "Income tax"
+    ]
+  },
+  {
+    "topic": "Statistics 1",
+    "objectives": [
+      "define statistics",
+      "collect and organise data",
+      "draw a frequency distribution table",
+      "group data into reasonable classes",
+      "calculate measures of central tendency",
+      "represent data in form of line graphs, bar graphs, pie-charts, pictogram, histogram and frequency polygons",
+      "interpret data from real life situations"
+    ],
+    "subtopics": [
+      "Definition of statistics",
+      "Collection and organization of data",
+      "Frequency distribution tables (for grouped and ungrouped data)",
+      "Grouping data",
+      "Mean, mode and median for ungrouped and grouped data",
+      "Representation of data: Line graph, Bar graph, Pie chart, Pictogram, Histogram, Frequency polygon",
+      "Interpretation of data"
+    ]
+  },
+  {
+    "topic": "Statistics 2",
+    "objectives": [
+      "state the measures of central tendency",
+      "calculate the mean using the assumed mean method",
+      "make cumulative frequency table",
+      "estimate the median and the quartiles by calculation and by using ogive",
+      "define and calculate the measures of dispersion: range, quartiles, interquartile range, quartile deviation, variance and standard deviation",
+      "interpret measures of dispersion"
+    ],
+    "subtopics": [
+      "Mean from assumed mean",
+      "Cumulative frequency table",
+      "Ogive",
+      "Median",
+      "Quartiles",
+      "Range",
+      "Interquartile range",
+      "Quartile deviation",
+      "Variance",
+      "Standard deviation"
+    ]
+  },
+  {
+    "topic": "Probability",
+    "objectives": [
+      "define probability",
+      "determine probability from experiments and real life situations",
+      "construct a probability space",
+      "determine theoretical probability",
+      "differentiate between discrete and continuous probability",
+      "differentiate mutually exclusive and independent events",
+      "state and apply laws of probability",
+      "use a tree diagram to determine probabilities"
+    ],
+    "subtopics": [
+      "Probability",
+      "Experimental probability",
+      "Range of probability measure 0 ≤ P(x) ≤ 1",
+      "Probability space",
+      "Theoretical probability",
+      "Discrete and continuous probability (simple cases only)",
+      "Combined events (mutually exclusive and independent events)",
+      "Laws of probability",
+      "The tree diagrams"
+    ]
+  },
+  {
+    "topic": "Vectors 1",
+    "objectives": [
+      "define vector and scalar",
+      "use vector notation",
+      "represent vectors both single and combined geometrically",
+      "identify equivalent vectors",
+      "add vectors",
+      "multiply vectors by scalars",
+      "define position vector and column vector",
+      "find magnitude of a vector",
+      "find mid-point of a vector",
+      "define translation as a transformation"
+    ],
+    "subtopics": [
+      "Vector and scalar quantities",
+      "Vector notation",
+      "Geometric representation of vectors",
+      "Equivalent vectors",
+      "Vector addition",
+      "Multiplication of vectors by scalars",
+      "Position vector and column vector",
+      "Magnitude of a vector",
+      "Mid-point of a vector",
+      "Translation as a transformation"
+    ]
+  },
+  {
+    "topic": "Matrices and Transformations",
+    "objectives": [
+      "relate image and object under a given transformation on the cartesian plane",
+      "determine the matrix of a transformation",
+      "perform successive transformations",
+      "determine and identify a single matrix for successive transformation",
+      "relate identity matrix and transformation",
+      "determine the inverse of a transformation",
+      "establish and use the relationship between area scale factor and determinant of a matrix",
+      "determine shear and stretch transformations",
+      "define and distinguish isometric and non-isometric transformation",
+      "apply transformation to real life situations"
+    ],
+    "subtopics": [
+      "Transformation on the Cartesian plane",
+      "Identification of transformation matrix",
+      "Successive transformations",
+      "Single matrix of transformation for successive transformations",
+      "Identity matrix and transformation",
+      "Inverse of a transformation",
+      "Area scale factor and determinant of a matrix",
+      "Shear and stretch (include their matrices)",
+      "Isometric and non-isometric transformations",
+      "Application of transformation to real life situations"
+    ]
+  },
+  {
+    "topic": "Longitude and Latitudes",
+    "objectives": [
+      "define the great and small circles in relation to a sphere (including the earth)",
+      "establish the relationship between the radii of small and great circles",
+      "locate a place on the earth's surface in terms of latitude and longitude",
+      "calculate the distance between two points along the great circles and small circles (longitude and latitude) in nautical miles (nm) and kilometers (km)",
+      "calculate time in relation to longitudes",
+      "calculate speed in knots and kilometres per hour"
+    ],
+    "subtopics": [
+      "Latitude and longitude (great and small circles)",
+      "The Equator and Greenwich Meridian",
+      "Radii of small and great circles",
+      "Position of a place on the surface of the earth",
+      "Distance between two points along the small and great circles in nautical miles and kilometres",
+      "Distance in nautical miles and kilometres along a circle of latitude",
+      "Time and longitude",
+      "Speed in knots and Kilometres per hour"
+    ]
+  },
+  {
+    "topic": "Area Approximation",
+    "objectives": [
+      "approximate the area of irregular shapes by counting techniques",
+      "derive the trapezium rule",
+      "apply trapezium rule to approximate areas of irregular shapes",
+      "apply trapezium rule to estimate areas under curves",
+      "derive the mid-ordinate rule",
+      "apply mid-ordinate rule to approximate area under curves"
+    ],
+    "subtopics": [
+      "Area by counting techniques",
+      "Trapezium rule",
+      "Area using trapezium rule",
+      "Mid-ordinate",
+      "Area by the mid-ordinate rule"
+    ]
+  },
+  {
+    "topic": "Differentiation",
+    "objectives": [
+      "find average rates of change and instantaneous rates of change",
+      "find the gradient of a curve at a point using tangent",
+      "relate the delta notation to rates of change",
+      "find the gradient function of a function of the form y = xⁿ (n is a positive integer)",
+      "define derivative of a function, derived function of a polynomial and differentiation",
+      "determine the derivative of a polynomial",
+      "find equations of tangents and normals to the curves",
+      "sketch a curve",
+      "apply differentiation in calculating distance, velocity and acceleration",
+      "apply differentiation in finding maxima and minima of a function"
+    ],
+    "subtopics": [
+      "Average and instantaneous rates of change",
+      "Gradient of a curve at a point",
+      "Gradient of y = xⁿ (where n is a positive integer)",
+      "Delta notation (Δ) or δ",
+      "Derivative of a polynomial",
+      "Equations of tangents and normals to the curve",
+      "Stationary points",
+      "Curve sketching",
+      "Application of differentiation in calculation of distance, velocity and acceleration",
+      "Maxima and minima"
+    ]
+  }
+]
