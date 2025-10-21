@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HOUSE OF CB | Womenswear designed in London</title>
+	<style>
+		/* ---------- RESET ---------- */
+		*{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#111;}
+		body{background:#fff;line-height:1.4;}
+		img{max-width:100%;display:block;}
+		a{text-decoration:none;color:inherit;}
+		ul{list-style:none;}
+
+		/* ---------- HEADER ---------- */
+		header{border-bottom:1px solid #eee;padding:12px 0;font-size:.75rem;text-align:center;background:#fafafa;}
+		header span{margin:0 12px;}
+		header span:hover{text-decoration:underline;cursor:pointer;}
+
+		/* ---------- NAV ---------- */
+		nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;}
+		.logo{font-weight:700;letter-spacing:.08em;font-size:1.3rem;}
+		.nav-center{display:flex;gap:30px;font-size:.85rem;letter-spacing:.04em;font-weight:500;}
+		.nav-icons{display:flex;gap:22px;font-size:1.15rem;cursor:pointer;}
+
+		/* ---------- HERO ---------- */
+		.hero img{width:100%;display:block;}
+
+		/* ---------- SECTION TITLE ---------- */
+		.section-title{text-align:center;padding:60px 20px 40px;}
+		.section-title h2{font-size:2rem;font-weight:400;letter-spacing:.05em;}
+		.section-title p{font-size:1rem;color:#555;margin-top:8px;}
+
+		/* ---------- PRODUCT GRID ---------- */
+		.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:30px;padding:0 40px 60px;}
+		.product-card{display:flex;flex-direction:column;gap:10px;}
+		.product-card img{width:100%;aspect-ratio:3/4;object-fit:cover;}
+		.product-name{font-size:.9rem;font-weight:500;}
+		.product-price{font-size:.85rem;color:#555;}
+
+		/* ---------- NEWSLETTER ---------- */
+		.newsletter{background:#fafafa;border-top:1px solid #eee;padding:60px 40px;text-align:center;}
+		.newsletter h3{font-size:1.4rem;font-weight:400;margin-bottom:10px;}
+		.newsletter p{font-size:.9rem;color:#555;margin-bottom:20px;}
+		.newsletter input[type=email]{padding:10px 14px;width:260px;border:1px solid #ccc;font-size:.85rem;}
+		.newsletter button{padding:11px 18px;margin-left:8px;border:none;background:#111;color:#fff;font-size:.85rem;cursor:pointer;}
+
+		/* ---------- FOOTER ---------- */
+		footer{padding:50px 40px 30px;font-size:.8rem;color:#555;display:flex;flex-direction:column;gap:20px;}
+		.footer-top{display:flex;flex-wrap:wrap;gap:40px;}
+		.footer-col{flex:1 1 200px;}
+		.footer-col h4{margin-bottom:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.85rem;}
+		.footer-bottom{text-align:center;font-size:.7rem;padding-top:20px;border-top:1px solid #eee;}
+
+		/* ---------- RESPONSIVE ---------- */
+		@media(max-width:768px){
+			.nav-center{display:none;}
+			.products{grid-template-columns:1fr 1fr;gap:15px;padding:0 15px 40px;}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header>
+		<span>Select Your Location</span>
+		<span>English</span>
+		<span>Español</span>
+		<span>Français</span>
+		<span>Deutsch</span>
+		<span>Русский</span>
+		<span>中文</span>
+	</header>
+
+	<!-- NAV -->
+	<nav>
+		<div class="nav-icons">☰</div>
+		<div class="logo">HOUSE OF CB</div>
+		<div class="nav-center">
+			<a href="#">NEW IN</a>
+			<a href="#">CLOTHING</a>
+			<a href="#">DRESSES</a>
+			<a href="#">SALE</a>
+		</div>
+		<div class="nav-icons">
+			<span>🔍</span>
+			<span>👤</span>
+			<span>🛍️</span>
+		</div>
+	</nav>
+
+	<!-- HERO -->
+	<section class="hero">
+		<img src="https://picsum.photos/1600/900?random=10" alt="Sound of Love">
+	</section>
+
+	<!-- SECTION TITLE -->
+	<div class="section-title">
+		<h2>Sound of Love</h2>
+		<p>We’re setting a new tone for spring with blooming floral prints, delicate embroidery and fresh bold tones. Our final drop is here – explore all it has to offer...</p>
+	</div>
+
+	<!-- PRODUCT GRID -->
+	<section class="products">
+		<!-- 1 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=11" alt="Emiliana">
+			<div class="product-name">EMILIANA green stripe floral print stretch cotton mini dress</div>
+			<div class="product-price">£149</div>
+		</div>
+		<!-- 2 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=12" alt="Emilia">
+			<div class="product-name">EMILIA sage stretch cotton halter neck midi dress</div>
+			<div class="product-price">£169</div>
+		</div>
+		<!-- 3 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=13" alt="Emely">
+			<div class="product-name">EMELY white floral print stretch cotton midi sundress</div>
+			<div class="product-price">£159</div>
+		</div>
+		<!-- 4 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=14" alt="Emmelina">
+			<div class="product-name">EMMELINA floral rose print stretch cotton corset sundress</div>
+			<div class="product-price">£179</div>
+		</div>
+		<!-- 5 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=15" alt="Kikki">
+			<div class="product-name">KIKKI white stretch cotton corset top</div>
+			<div class="product-price">£79</div>
+		</div>
+		<!-- 6 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=16" alt="Emiliana">
+			<div class="product-name">EMILIANA green stripe floral print stretch cotton mini dress</div>
+			<div class="product-price">£149</div>
+		</div>
+		<!-- 7 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=17" alt="Emilia">
+			<div class="product-name">EMILIA sage stretch cotton halter neck midi dress</div>
+			<div class="product-price">£169</div>
+		</div>
+		<!-- 8 -->
+		<div class="product-card">
+			<img src="https://picsum.photos/600/800?random=18" alt="Emely">
+			<div class="product-name">EMELY white floral print stretch cotton midi sundress</div>
+			<div class="product-price">£159</div>
+		</div>
+	</section>
+
+	<!-- NEWSLETTER -->
+	<section class="newsletter">
+		<h3>Subscribe to House of CB Newsletter</h3>
+		<p>For All Things CB, sign up for the latest updates and exclusive access to sales.</p>
+		<form>
+			<input type="email" placeholder="Enter your email address">
+			<button type="submit">SUBSCRIBE</button>
+		</form>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-top">
+			<div class="footer-col">
+				<h4>Customer Care</h4>
+				<ul>
+					<li>Contact Us</li>
+					<li>Shipping & Returns</li>
+					<li>Size Guide</li>
+					<li>FAQs</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>About</h4>
+				<ul>
+					<li>Our Story</li>
+					<li>Press</li>
+					<li>Careers</li>
+					<li>Privacy Policy</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Follow Us</h4>
+				<ul>
+					<li>Instagram</li>
+					<li>TikTok</li>
+					<li>Facebook</li>
+					<li>YouTube</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			© 2010-2025 Sirens Design Limited<br>
+			132-133 The Street Montfichet Road, London, E20 1EN, United Kingdom.<br>
+			Powered By Trackerteer.com
+		</div>
+	</footer>
+
+</body>
+</html>

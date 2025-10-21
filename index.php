@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="/lister/css/styles.css">
     <link rel="stylesheet" href="/lister/css/w3.css">
-    <title>My protos</title>
+    <title>Your projects</title>
     <meta name="viewport" content="initial-scale=1,width-device-width">
 </head>
 <body>
@@ -62,6 +62,7 @@
 	        );
         }
     </script>
+
 </div>
 </body>
 </html>

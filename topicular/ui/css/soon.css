@@ -1,0 +1,144 @@
+:root{
+	--themecolor: #d46f92;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	color: #333;
+	font-family: 'Playfair Display', serif;
+	line-height: 1.6;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url('imgs/slides/slide2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	background: linear-gradient(80deg,#aaa,rgb(255, 240, 245)); /* White + light pink overlay */
+	z-index: -1;
+}
+.content{
+
+}
+.container {
+	max-width: 800px;
+	padding: 40px 20px;
+	z-index: 1;
+}
+
+h1 {
+	font-size: 2.5rem;
+	color: var(--themecolor);
+	margin-bottom: 15px;
+	font-weight: 800;
+}
+
+p {
+	/*font-weight: 700;*/
+	font-size: 1.2rem;
+	color: #222;
+	margin-bottom: 30px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.countdown {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin: 30px 0;
+	font-size: 1.8rem;
+	color: #e83e8c;
+	font-weight: bold;
+}
+
+.countdown .smallcard {
+	background: white;
+	padding: 10px 15px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+	min-width: 80px;
+}
+
+.countdown .label {
+	display: block;
+	font-size: 1rem;
+	color: #d46f92;
+	margin-top: 5px;
+}
+
+.email-form {
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.email-form input {
+	padding: 12px 20px;
+	width: 70%;
+	border: 1px solid #e83e8c;
+	border-radius: 30px 0 0 30px;
+	outline: none;
+	font-family: 'Playfair Display', serif;
+	font-size: 1rem;
+}
+
+.email-form button {
+	background-color: #e83e8c;
+	color: white;
+	border: none;
+	padding: 12px 25px;
+	border-radius: 0 30px 30px 0;
+	cursor: pointer;
+	font-family: 'Playfair Display', serif;
+	font-weight: 500;
+	transition: background 0.3s;
+}
+
+.email-form button:hover {
+	background-color: #c72a73;
+}
+
+.social-icons {
+	margin-top: 40px;
+}
+
+.social-icons a {
+	color: #e83e8c;
+	font-size: 1.5rem;
+	margin: 0 15px;
+	transition: color 0.3s;
+}
+
+.social-icons a:hover {
+	color: #d46f92;
+}
+
+.tagline {
+	font-family: 'Great Vibes', cursive;
+	font-size: 1.8rem;
+	color: #e83e8c;
+	margin-top: 30px;
+	opacity: 0.9;
+}

@@ -1,0 +1,5 @@
+elsie's user journey
+	get there
+	pick product
+	proceed via whatsapp or buy immediately
+		buy immediately opens the checkout menu and starts an order

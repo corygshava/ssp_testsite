@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Super Encryptor</title>
+	<title>Hyper Encryptor</title>
 
 	<link rel="stylesheet" href="../_sres/css/fa-all.css">
 	<link rel="stylesheet" href="../_sres/css/w3.css">

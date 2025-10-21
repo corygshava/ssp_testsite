@@ -8,7 +8,9 @@
 	    exit;
 	}
 
-	// try{
+	// echo "waddda";
+
+	try{
 		// Expected fields
 		$required = ["text", "offset", "slt", "op"];
 		$data = [];
@@ -33,7 +35,7 @@
 		$finres = "";
 
 		// load encryptor code
-		include '_super_encryptor.php';
+		include '_hyper_encryptor.php';
 
 		// Decide operation
 		if ($op === "encrypt") {
@@ -49,8 +51,8 @@
 
 		echo json_encode($response);
 		exit();
-	// } catch(Exception $e){
+	} catch(Exception $e){
 		$response = ["error" => "Error: $e"];
 		echo json_encode($response);
-	// }
+	}
 ?>

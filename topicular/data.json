@@ -1,0 +1,360 @@
+[
+	{
+		"topic": "Symbols",
+		"objectives": [],
+		"subtopics": ["SI Units", "Rational symbols"]
+	},
+	{
+		"topic": "Natural Numbers",
+		"objectives": [
+			"identify, read and write natural numbers in symbols and words",
+			"round off numbers to the nearest tens, hundreds, thousands, millions and billions",
+			"classify natural numbers as even, odd or prime",
+			"solve word problems involving natural numbers"
+		],
+		"subtopics": [
+			"Place values of numbers",
+			"Rounding off numbers",
+			"Odd numbers",
+			"Even numbers",
+			"Prime numbers",
+			"Word problems involving natural numbers"
+		]
+	},
+	{
+		"topic": "Factors",
+		"objectives": [
+			"express composite numbers in factor form",
+			"express composite numbers as product of prime factors",
+			"express factors in power form"
+		],
+		"subtopics": [
+			"Factors of composite numbers",
+			"Prime factors",
+			"Factors in power form"
+		]
+	},
+	{
+		"topic": "Divisibility Tests",
+		"objectives": [
+			"test the divisibility of numbers by 2, 3, 4, 5, 6, 8, 9, 10 and 11"
+		],
+		"subtopics": [
+			"Divisibility test of numbers by 2, 3, 4, 5, 6, 8, 9, 10 and 11"
+		]
+	},
+	{
+		"topic": "Greatest Common Divisor (GCD)/Highest Common Factor (HCF)",
+		"objectives": [
+			"find the GCD/HCF of a set of numbers",
+			"apply GCD to real life situations"
+		],
+		"subtopics": [
+			"GCD of a set of numbers",
+			"Application of GCD/HCF to real life situations"
+		]
+	},
+	{
+		"topic": "Least Common Multiple (LCM)",
+		"objectives": [
+			"list multiples of numbers",
+			"find the LCM of a set of numbers",
+			"apply knowledge of LCM in real life situations"
+		],
+		"subtopics": [
+			"Multiples of a number",
+			"LCM of a set of numbers",
+			"Application of LCM in real life situations"
+		]
+	},
+	{
+		"topic": "Integers",
+		"objectives": [
+			"define integers",
+			"identify integers on a number line",
+			"perform the four basic operations on integers using the number line",
+			"work out combined operations on integers in the correct order",
+			"apply knowledge of integers to real life situations"
+		],
+		"subtopics": [
+			"Integers",
+			"The number line",
+			"Operation on integers",
+			"Order of operations",
+			"Application to real life situations"
+		]
+	},
+	{
+		"topic": "Fractions",
+		"objectives": [
+			"identify proper and improper fractions and mixed numbers",
+			"convert mixed numbers to improper fractions and vice versa",
+			"compare fractions",
+			"perform the four basic operations on fractions",
+			"carry out combined operations on fractions in the correct order",
+			"apply the knowledge of fractions to real life situations"
+		],
+		"subtopics": [
+			"Fractions",
+			"Proper, improper fractions and mixed numbers",
+			"Conversion of improper fractions to mixed numbers and vice versa",
+			"Comparing fractions",
+			"Operations on fractions",
+			"Order of operations on fractions",
+			"Word problems involving fractions in real life situations"
+		]
+	},
+	{
+		"topic": "Decimals",
+		"objectives": [
+			"convert fractions into decimals and vice versa",
+			"identify recurring decimals",
+			"convert recurring decimals into fractions",
+			"round off a decimal number to the required number of decimal places",
+			"write numbers in standard form",
+			"perform the four basic operations on decimals",
+			"carry out operations in the correct order",
+			"apply the knowledge of decimals to real life situations"
+		],
+		"subtopics": [
+			"Fractions and decimals",
+			"Recurring decimals",
+			"Recurring decimals and fractions",
+			"Decimal places",
+			"Standard form",
+			"Operations on decimals",
+			"Order of operations",
+			"Real life problems involving decimals"
+		]
+	},
+	{
+		"topic": "Squares and Square Roots",
+		"objectives": [
+			"find squares of numbers by multiplication",
+			"find squares from tables",
+			"find square root by factor method",
+			"find square root from tables"
+		],
+		"subtopics": [
+			"Squares by multiplication",
+			"Squares from tables",
+			"Square roots by factorization",
+			"Square roots from tables"
+		]
+	},
+	{
+		"topic": "Cubes and Cube Roots",
+		"objectives": [
+			"find the cube of a number by multiplication",
+			"find the cube root of a number by factor method",
+			"find cubes of numbers from mathematical tables",
+			"evaluate expressions involving cubes and cube roots",
+			"apply the knowledge of cubes and cube roots in real life situations"
+		],
+		"subtopics": [
+			"Cubes of numbers by multiplication",
+			"Cubes from tables",
+			"Cube roots of numbers by factor method",
+			"Evaluation of cube and cube root expressions",
+			"Application of cubes and cube roots to real life situations"
+		]
+	},
+	{
+		"topic": "Reciprocals",
+		"objectives": [
+			"find reciprocals of numbers by division",
+			"find reciprocals of numbers from tables",
+			"use reciprocals of numbers in computation"
+		],
+		"subtopics": [
+			"Reciprocals of numbers by division",
+			"Reciprocals of numbers from tables",
+			"Computation using reciprocals"
+		]
+	},
+	{
+		"topic": "Rates, Ratios, Percentages and Proportion",
+		"objectives": [
+			"define rates",
+			"solve problems involving rates",
+			"define ratio",
+			"compare two or more quantities using ratios",
+			"change quantities in a given ratio",
+			"compare two or more ratios",
+			"represent and interpret proportional parts",
+			"recognise direct and inverse proportions",
+			"solve problems involving direct and inverse proportions",
+			"convert fractions and decimals to percentages and vice-versa",
+			"calculate percentage change in a given quantity",
+			"apply rates, ratios, percentages to real life situations and proportion"
+		],
+		"subtopics": [
+			"Rates",
+			"Solving problems involving rates",
+			"Ratio",
+			"Comparing quantities using ratio",
+			"Increase and decrease in a given ratio",
+			"Comparing ratios",
+			"Proportion: direct and inverse",
+			"Solve problems on direct and inverse proportions",
+			"Fractions and decimals as percentages",
+			"Percentage increase and decrease",
+			"Application of rates, ratios, percentages and proportion to real life situations"
+		]
+	},
+	{
+		"topic": "Compound Proportions and Rates of Work",
+		"objectives": [
+			"solve problems involving compound proportions using unitary and ratio methods",
+			"apply ratios and proportions to real life situations",
+			"solve problems involving rates of work"
+		],
+		"subtopics": [
+			"Proportional parts",
+			"Compound proportions",
+			"Ratios and rates of work",
+			"Proportions applied to mixtures"
+		]
+	},
+	{
+		"topic": "Linear Motion",
+		"objectives": [
+			"define displacement, speed, velocity and acceleration",
+			"distinguish between distance and displacement, speed and velocity",
+			"determine velocity and acceleration",
+			"plot and draw graphs of linear motion (distance and velocity time graphs)",
+			"interpret graphs of linear motion",
+			"define relative speed",
+			"solve problems involving relative speed"
+		],
+		"subtopics": [
+			"Displacement, velocity, speed and acceleration",
+			"Determining velocity and acceleration",
+			"Relative speed",
+			"Distance — time graph",
+			"Velocity time graph",
+			"Interpretation of graphs of linear motion",
+			"Solving problems involving relative speed"
+		]
+	},
+	{
+		"topic": "Indices and Logarithms",
+		"objectives": [
+			"define indices (powers)",
+			"state the laws of indices",
+			"apply the laws of indices in calculations",
+			"relate the powers of 10 to common logarithms",
+			"use the tables of common logarithms and anti-logarithms in computation"
+		],
+		"subtopics": [
+			"Indices (powers) and base",
+			"Laws of indices (including positive integers, negative integers and fractional indices)",
+			"Powers of 10 and common logarithms",
+			"Common logarithms: characteristics and mantissa",
+			"Logarithm tables",
+			"Application of common logarithms in multiplication, division, powers and roots"
+		]
+	},
+	{
+		"topic": "Further Logarithms",
+		"objectives": [
+			"derive logarithmic relation from index form and vice versa",
+			"state the laws of logarithms",
+			"use logarithmic laws to simplify logarithmic expressions and solve logarithmic equations",
+			"apply laws of logarithms for further computations"
+		],
+		"subtopics": [
+			"Logarithmic notation (eg. an=b, log ab=n)",
+			"The laws of logarithms: log (AB) = log A + log B, log(A÷B) = log A-log B and Log An= n x log A",
+			"Simplifications of logarithmic expressions",
+			"Solution of logarithmic equations",
+			"Further computation using logarithmic laws"
+		]
+	},
+	{
+		"topic": "Approximations and Errors",
+		"objectives": [
+			"Perform various computations using a calculator",
+			"make reasonable approximations and estimations of quantities in computations and measurements",
+			"express values to a given number of significant figures",
+			"define absolute, relative, percentage, round-off and truncation errors",
+			"determine possible errors made from computations",
+			"find maximum and minimum errors from operations"
+		],
+		"subtopics": [
+			"Computing using calculators",
+			"Estimations and approximations",
+			"Significant figures",
+			"Absolute, relative, percentage, round-off (including significant figures) and truncation errors",
+			"Propagation of errors from simple calculations",
+			"Maximum and minimum errors"
+		]
+	},
+	{
+		"topic": "Length",
+		"objectives": [
+			"state the units of measuring length",
+			"convert units of length from one form to another",
+			"express numbers to required number of significant figures",
+			"find the perimeter of a plane figure and circumference of a circle"
+		],
+		"subtopics": [
+			"Units of length (mm, cm, m, km)",
+			"Conversion of units of length from one form to another",
+			"Significant figures",
+			"Perimeter",
+			"Circumference (include length of arcs)"
+		]
+	},
+	{
+		"topic": "Area",
+		"objectives": [
+			"state units of area",
+			"convert units of area from one form to another",
+			"calculate the area of a regular plane figure including circles",
+			"estimate the area of irregular plane figures by counting squares",
+			"calculate the surface area of cubes, cuboids and cylinders"
+		],
+		"subtopics": [
+			"Units of area (0112, m2, km2, Ares, ha)",
+			"Conversion of units of area",
+			"Area of regular plane figures",
+			"Area of irregular plane shapes",
+			"Surface area of cubes, cuboids and cylinders"
+		]
+	},
+	{
+		"topic": "Pythagoras Theorem",
+		"objectives": [
+			"derive Pythagoras Theorem",
+			"solve problems using Pythagoras Theorem",
+			"apply Pythagoras Theorem to real life situations"
+		],
+		"subtopics": [
+			"Pythagoras Theorem",
+			"Solution of problems using Pythagoras Theorem",
+			"Application to real life situations"
+		]
+	},
+	{
+		"topic": "Volume and Capacity",
+		"objectives": [
+			"state units of volume",
+			"convert units of volume from one form to another",
+			"calculate volume of cubes, cuboids and cylinders",
+			"state units of capacity",
+			"convert units of capacity from one form to another",
+			"relate volume to capacity",
+			"solve problems involving volume and capacity"
+		],
+		"subtopics": [
+			"Units of volume",
+			"Conversion of units of volume",
+			"Volume of cubes, cuboids and cylinders",
+			"Units of capacity",
+			"Conversion of units of capacity",
+			"Relationship between volume and capacity",
+			"Solving problems involving volume and capacity"
+		]
+	}
+]

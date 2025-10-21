@@ -1,0 +1,36 @@
+/* holds reusable classes and most css variables */
+
+:root{
+	--primaryColor: #ff6600;
+	--textColor: #fff;
+	--roundSmall: 15px;
+
+	--shadowFar: 0 0 12px rgba(0,0,0,0.2);
+}
+
+*{
+	box-sizing: border-box;
+	transition: 0.3s ease-out;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+/* common styles */
+	.primarybg{
+		background-color: var(--primaryColor);
+		color: var(--textColor);
+	}
+
+	.logo_text {
+		font-family: 'Great Vibes', cursive;
+	}
+
+	.heightguy{
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		pointer-events: none;
+	}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-commerce Demo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    :root {
+        --primary: #e75480;
+        --bg: #fffafc;
+        --text: #333;
+        --muted: #777;
+    }
+    * { box-sizing: border-box; transition: 0.3s ease-out; }
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+    }
+    header {
+        background: var(--primary);
+        color: white;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cart-btn {
+        background: white;
+        color: var(--primary);
+        border: none;
+        padding: 6px 12px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .cart-btn:hover { background: #ffe4ef; }
+
+    /* Product Grid */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    .product-card {
+        position: relative;
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .product-card img {
+        width: 100%;
+        border-radius: 12px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .product-name { margin: 10px 0 5px; font-weight: bold; color: var(--primary); }
+    .product-price { color: var(--muted); margin-bottom: 10px; }
+    .liker {
+        background: none; border: none; cursor: pointer;
+        font-size: 1.2rem; color: var(--primary);
+    }
+    .product-card button.w3-btn {
+        margin-top: 8px;
+        background: var(--primary);
+        border: none;
+        color: white;
+        border-radius: 25px;
+        padding: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+    }
+    .product-card button.w3-btn:hover { background: #d6456d; }
+
+    /* Overlay Modal */
+    .modal-overlay {
+        position: fixed; top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(231,84,128,0.15);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+    .modal {
+        background: white;
+        border-radius: 20px;
+        width: 80%; max-width: 700px;
+        padding: 20px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+        position: relative;
+    }
+    .modal img { width: 100%; border-radius: 15px; }
+    .close-btn {
+        position: absolute; top: 15px; right: 15px;
+        background: var(--primary); color: white;
+        border: none; border-radius: 20px;
+        padding: 6px 12px; cursor: pointer;
+    }
+    .product-info h2 { color: var(--primary); margin-top: 0; }
+    .price { font-weight: bold; font-size: 1.2rem; margin: 10px 0; }
+    .btn {
+        background: var(--primary); color: white;
+        border: none; padding: 10px 18px;
+        border-radius: 25px; cursor: pointer;
+        font-weight: bold;
+    }
+    .btn:hover { background: #d6456d; }
+
+    /* Cart Sidebar */
+    .cart {
+        position: fixed; top: 0; right: -400px;
+        width: 350px; height: 100%;
+        background: white;
+        box-shadow: -4px 0 15px rgba(0,0,0,0.15);
+        padding: 20px;
+        transition: right 0.4s ease;
+        display: flex; flex-direction: column;
+        z-index: 1000;
+    }
+    .cart.open { right: 0; }
+    .cart h2 { margin-top: 0; color: var(--primary); }
+    .cart-items { flex: 1; overflow-y: auto; margin-bottom: 15px; }
+    .cart-item {
+        display: flex; align-items: center; gap: 10px;
+        margin-bottom: 12px; border-bottom: 1px solid #f3c9d6; padding-bottom: 10px;
+    }
+    .cart-item img { width: 50px; height: 50px; border-radius: 8px; object-fit: cover; }
+    .cart-total { font-weight: bold; margin-bottom: 10px; }
+    .checkout-btn {
+        background: var(--primary); color: white;
+        padding: 10px; border: none;
+        border-radius: 25px; font-weight: bold; cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <span>Feminine Fashion</span>
+    <button class="cart-btn" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+</header>
+
+<!-- Product Cards -->
+<div class="products">
+    <div class="product-card">
+        <img src="https://picsum.photos/300/200?random=101" alt="Emmelina">
+        <div class="product-name">Pink luxury dress</div>
+        <div class="product-price">Ksh 25,000</div>
+        <div class="w3-display-topright">
+            <button class="liker"><i class="fa fa-heart"></i></button>
+        </div>
+        <div>
+            <button class="w3-black w3-btn w3-block themehover" onclick="openProduct('Pink luxury dress',25000,'imgs/slides/slide1.png')">
+                <i class="fa fa-plus"></i> Add to cart
+            </button>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://picsum.photos/300/200?random=102" alt="Emmelina">
+        <div class="product-name">Evening Gown</div>
+        <div class="product-price">Ksh 30,000</div>
+        <div class="w3-display-topright">
+            <button class="liker"><i class="fa fa-heart"></i></button>
+        </div>
+        <div>
+            <button class="w3-black w3-btn w3-block themehover" onclick="openProduct('Evening Gown',30000,'imgs/slides/slide1.png')">
+                <i class="fa fa-plus"></i> Add to cart
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Modal -->
+<div class="modal-overlay" id="productModal">
+    <div class="modal">
+        <button class="close-btn" onclick="closeModal()">✕</button>
+        <div class="product-img">
+            <img id="modalImg" src="" alt="Product">
+        </div>
+        <div class="product-info">
+            <h2 id="modalName"></h2>
+            <div class="price" id="modalPrice"></div>
+            <p class="desc" id="modalDesc">Elegant choice for every occasion.</p>
+            <button class="btn" onclick="addToCartFromModal()">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Sidebar -->
+<div class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total" id="cartTotal">Total: Ksh 0</div>
+    <button class="checkout-btn">Proceed to Checkout</button>
+</div>
+
+<script>
+let cart = [];
+let cartOpen = false;
+let currentProduct = {};
+
+function toggleCart() {
+    cartOpen = !cartOpen;
+    document.getElementById("cart").classList.toggle("open", cartOpen);
+}
+function openModal() {
+    document.getElementById("productModal").style.display = "flex";
+}
+function closeModal() {
+    document.getElementById("productModal").style.display = "none";
+}
+function openProduct(name, price, img) {
+    currentProduct = {name, price, img};
+    document.getElementById("modalName").textContent = name;
+    document.getElementById("modalPrice").textContent = "Ksh " + price.toLocaleString();
+    document.getElementById("modalImg").src = img;
+    openModal();
+}
+function addToCartFromModal() {
+    cart.push(currentProduct);
+    updateCart();
+    closeModal();
+    if (!cartOpen) toggleCart();
+}
+function updateCart() {
+    const cartItems = document.getElementById("cartItems");
+    const cartCount = document.getElementById("cartCount");
+    const cartTotal = document.getElementById("cartTotal");
+
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    cart.forEach(item => {
+        total += item.price;
+        cartItems.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.img}" alt="">
+                <div>
+                    <strong>${item.name}</strong><br>
+                    <span>Ksh ${item.price.toLocaleString()}</span>
+                </div>
+            </div>
+        `;
+    });
+
+    cartCount.textContent = cart.length;
+    cartTotal.textContent = "Total: Ksh " + total.toLocaleString();
+}
+</script>
+
+</body>
+</html>

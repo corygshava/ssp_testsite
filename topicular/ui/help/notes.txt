@@ -1,0 +1,5 @@
+search this to finish up on undone features
+addlater:
+
+flow for the icons
+	showdata (app.js) - getui.worker - getmydata (ajaxman) - genui (appwirker)

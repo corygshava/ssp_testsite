@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion E-Commerce Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    *{box-sizing:border-box;}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: relative;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .product-name {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .product-price {
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+    .liker {
+      background: none;
+      border: none;
+      color: #e91e63;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .themehover:hover {
+      background: #e91e63 !important;
+      color: #fff !important;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .cart-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .remove-btn {
+      background: none;
+      border: none;
+      color: #e91e63;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .checkout-section input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .pay-btn {
+      margin-top: 10px;
+      width: 100%;
+      padding: 12px;
+      background: #e91e63;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="products">
+  <div class="product-card">
+    <img src="imgs/slides/slide1.png" alt="Emmelina">
+    <div class="product-name">Pink luxury dress</div>
+    <div class="product-price">25000</div>
+    <div class="w3-display-topright">
+      <button class="liker"><i class="fa fa-heart"></i></button>
+    </div>
+    <div>
+      <button class="w3-black w3-btn w3-block themehover add-to-cart"><i class="fa fa-plus"></i> Add to cart</button>
+    </div>
+  </div>
+  <div class="product-card">
+    <img src="imgs/slides/slide1.png" alt="Emmelina">
+    <div class="product-name">Luxury heels</div>
+    <div class="product-price">12000</div>
+    <div class="w3-display-topright">
+      <button class="liker"><i class="fa fa-heart"></i></button>
+    </div>
+    <div>
+      <button class="w3-black w3-btn w3-block themehover add-to-cart"><i class="fa fa-plus"></i> Add to cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Cart Modal -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal('cartModal')"><i class="fas fa-times"></i></button>
+    <h2>Your Cart</h2>
+    <ul id="cartList" class="cart-list"></ul>
+    <button class="w3-btn themehover" onclick="openModal('checkoutModal')">Proceed to Checkout</button>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+<div id="checkoutModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal('checkoutModal')"><i class="fas fa-times"></i></button>
+    <h2>Checkout</h2>
+    <p>Total: Ksh <span id="checkoutTotal">0</span></p>
+
+    <div class="checkout-section">
+      <h3>Pay with Credit Card</h3>
+      <input type="text" placeholder="Card Number">
+      <input type="text" placeholder="Card Holder Name">
+      <input type="text" placeholder="Expiry Date (MM/YY)">
+      <input type="text" placeholder="CVV">
+
+      <h3>Or Pay with M-Pesa</h3>
+      <input type="text" placeholder="Phone Number">
+
+      <button class="pay-btn">Pay Now!</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const cart = [];
+
+  document.querySelectorAll('.add-to-cart').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const card = this.closest('.product-card');
+      const name = card.querySelector('.product-name').textContent;
+      const price = parseFloat(card.querySelector('.product-price').textContent);
+      cart.push({name, price});
+      updateCart();
+      openModal('cartModal');
+    });
+  });
+
+  function updateCart() {
+    const list = document.getElementById('cartList');
+    list.innerHTML = '';
+    let total = 0;
+    cart.forEach((item, index) => {
+      total += item.price;
+      const li = document.createElement('li');
+      li.innerHTML = `${item.name} - Ksh ${item.price} <button class="remove-btn" onclick="removeFromCart(${index})"><i class=\"fas fa-times\"></i></button>`;
+      list.appendChild(li);
+    });
+    document.getElementById('checkoutTotal').textContent = total;
+  }
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCart();
+  }
+
+  function openModal(id) {
+    closeAllModals();
+    document.getElementById(id).style.display = 'flex';
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  function closeAllModals() {
+    document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+  }
+
+  window.addEventListener('click', function(e) {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

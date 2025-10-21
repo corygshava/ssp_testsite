@@ -1,0 +1,11 @@
+make the homepage fully wirk
+	work on sidebar
+	git pull this repo
+	work on extras overlay
+	work on dummy cart
+
+	work on dummy search
+
+	work on dummy favorites
+	work on product details
+	work on ergonomic menu
