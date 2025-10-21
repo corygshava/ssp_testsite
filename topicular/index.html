@@ -16,8 +16,8 @@
 	<!-- Custom Modern CSS -->
 	<style>
 		:root {
-			--primary-color: #6366f1;
-			--secondary-color: #8b5cf6;
+			--primary-color: #2729c7;
+			--secondary-color: #5b038a;
 			--accent-color: #ec4899;
 			--bg-color: #f3f4f6;
 			--card-bg: #ffffff;
@@ -52,20 +52,17 @@
 			padding: 2rem 0;
 			overflow-y: auto;
 			transition: transform 0.3s ease;
-			z-index: 1000;
+			z-index: 1;
 			box-shadow: var(--shadow-lg);
 		}
-
 		.sidebar.collapsed {
 			transform: translateX(-100%);
 		}
-
 		.sidebar-header {
 			padding: 0 1.5rem 2rem;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 			margin-bottom: 1.5rem;
 		}
-
 		.sidebar-title {
 			color: white;
 			font-size: 1.5rem;
@@ -77,7 +74,7 @@
 
 		.nav-item {
 			padding: 0.75rem 1.5rem;
-			color: rgba(255, 255, 255, 0.8);
+			color: rgba(255, 255, 255, 1);
 			text-decoration: none;
 			display: block;
 			transition: all 0.3s ease;
@@ -116,8 +113,8 @@
 			position: fixed;
 			top: 1.5rem;
 			right: 1.5rem;
-			z-index: 1001;
-			background: var(--primary-color);
+			z-index: 11;
+			background: var(--secondary-color);
 			border: none;
 			border-radius: 50%;
 			width: 50px;
@@ -125,6 +122,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			gap: 24px;
 			cursor: pointer;
 			box-shadow: var(--shadow);
 			transition: all 0.3s ease;
@@ -218,10 +216,11 @@
 			display: inline-block;
 			background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 			color: white;
+			font-weight: 800;
 			padding: 0.5rem 1rem;
-			margin: 0.25rem;
+			margin: 5px 0.25rem;
 			border-radius: 20px;
-			font-size: 0.9rem;
+			font-size: 1.1rem;
 			transition: all 0.3s ease;
 			cursor: pointer;
 		}
@@ -283,15 +282,18 @@
 		#searchForm .input-group {
 			border-radius: 50rem;
 			overflow: hidden;
+			margin: 24px 0;
 		}
 		#searchForm input {
 			font-size: 0.9rem;
+			padding: 12px 16px !important;
+			height: 45px;
 		}
 		#showAllBtn {
 			position: fixed;
 			bottom: 1.5rem;
 			left: 1.5rem;
-			width: 50px;
+			/* width: 50px; */
 			height: 50px;
 			z-index: 1002;
 			display: none; /* shown only after a search */
@@ -316,10 +318,8 @@
 </head>
 <body>
 	<!-- Toggle Button -->
-	<button class="sidebar-toggle" id="sidebarToggle">
-		<svg viewBox="0 0 24 24">
-			<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-		</svg>
+	<button class="sidebar-toggle w3-text-white" id="sidebarToggle">
+		<i class="fa fa-times"></i>
 	</button>
 
 	<!-- Sidebar -->
@@ -333,7 +333,7 @@
 			</h2>
 			<form id="searchForm" class="">
 				<div class="input-group shadow-sm">
-					<input type="text" id="searchInput" class="form-control border-0" placeholder="Search topics..." autocomplete="off"/>
+					<input type="search" id="searchInput" class="form-control border-0" placeholder="Search topics..." autocomplete="off"/>
 					<div class="input-group-append">
 						<button class="btn btn-light border-0" type="submit">
 							<i class="fas fa-search text-primary"></i>
@@ -345,8 +345,8 @@
 		<div id="navItems"></div>
 	</nav>
 
-	<button id="showAllBtn" class="btn btn-primary rounded-circle shadow-lg" title="Show all sections">
-		<i class="fas fa-times"></i>
+	<button id="showAllBtn" class="btn btn-primary rounded shadow-lg" title="Show all sections">
+		<i class="fas fa-times"></i> close search
 	</button>
 
 	<!-- Main Content -->
@@ -374,7 +374,7 @@
 		let currentData = [];
 
 		const fetch_bypass = "api_fetcher";
-
+		const togglebtn = document.querySelector('#sidebarToggle');
 
 		curfun = fetch_bypass;
 		if(window[curfun] == undefined){
@@ -572,6 +572,10 @@
 		function toggleSidebar(params){
 			sidebar.classList.toggle('collapsed');
 			mainContent.classList.toggle('expanded');
+			
+			setTimeout(() => {
+				togglebtn.innerHTML = !sidebar.className.includes('collapsed') ? '<i class="fa fa-times"></i>' : '<i class="fa fa-bars"></i>';
+			}, 400);
 
 			anime({
 				targets: sidebarToggle,
@@ -632,6 +636,8 @@
 					alert_info(`${matches.length} results found`);
 					toggleSidebar();
 					showAllBtn.style.display = 'flex';
+				} else {
+					alert_danger('no results found');
 				}
 
 				cards.forEach(el => {
